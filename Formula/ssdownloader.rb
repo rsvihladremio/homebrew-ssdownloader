@@ -20,7 +20,7 @@ class Ssdownloader < Formula
   license "Apache-2.0"
   depends_on "go@1.18"
   def install
-    system "go build -ldflags -X github.com/rsvihladremio/ssdownloader/cmd.GitSha=f7c088c -X github.com/rsvihladremio/ssdownloader/cmd.Version=v0.2.5 -o ./bin/ssdownloader"
+    system "go build -ldflags '-X github.com/rsvihladremio/ssdownloader/cmd.GitSha=f7c088c -X github.com/rsvihladremio/ssdownloader/cmd.Version=v0.2.5' -o ./bin/ssdownloader"
     bin.install "./bin/ssdownloader" => "ssdownloader"
   end
   test do
