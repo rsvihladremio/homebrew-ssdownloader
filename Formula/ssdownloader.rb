@@ -11,9 +11,9 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-class SsDownloader < Formula
+class Ssdownloader < Formula
 
-  desc "SsDownloader integrates Zendesk and SendSafely APIs to easily download tickets@"
+  desc "ssdownloader integrates Zendesk and SendSafely APIs to easily download tickets@"
   homepage "https://github.com/rsvihladremio/ssdownloader"
   url "https://github.com/rsvihladremio/ssdownloader/archive/v0.2.5.tar.gz"
   sha256 "66c62a0b15326067661fe394b20dc580e1b745555bffb49decd70b125d6e06f0"
