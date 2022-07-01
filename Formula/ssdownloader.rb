@@ -15,12 +15,12 @@ class Ssdownloader < Formula
 
   desc "ssdownloader integrates Zendesk and SendSafely APIs to easily download tickets@"
   homepage "https://github.com/rsvihladremio/ssdownloader"
-  url "https://github.com/rsvihladremio/ssdownloader/archive/v0.2.5.tar.gz"
-  sha256 "66c62a0b15326067661fe394b20dc580e1b745555bffb49decd70b125d6e06f0"
+  url "https://github.com/rsvihladremio/ssdownloader/archive/v0.3.0.tar.gz"
+  sha256 "3c699c133a42f481430b6ec28357a5c37a2ff53a41e763ccf05d16d9deda678d"
   license "Apache-2.0"
   depends_on "go@1.18"
   def install
-    system "go build -ldflags '-X github.com/rsvihladremio/ssdownloader/cmd.GitSha=f7c088c -X github.com/rsvihladremio/ssdownloader/cmd.Version=v0.2.5' -o ./bin/ssdownloader"
+    system "go build -ldflags '-X github.com/rsvihladremio/ssdownloader/cmd.GitSha=f949e1a -X github.com/rsvihladremio/ssdownloader/cmd.Version=v0.3.0' -o ./bin/ssdownloader"
     bin.install "./bin/ssdownloader" => "ssdownloader"
   end
   test do
